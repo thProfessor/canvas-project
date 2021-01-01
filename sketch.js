@@ -14,11 +14,7 @@ function setup() {
 function draw() {
   // put drawing code here
   background(10);
-  snow.push(new Stars());
-  for (flake of snow) {
-    flake.render();
-    flake.update();
-  }
+ 
   pointLight(255, 255, 255, -200, 0, 0);
 
   ambientLight(80);
@@ -35,4 +31,9 @@ function draw() {
 
   angle += 0.07;
   pop();
+   snow.push(new Stars());
+  for (flake of snow) {
+    flake.render();
+    flake.update();
+  }
 }
