@@ -25,7 +25,7 @@ function draw() {
 
   push();
 
-  translate(mouseX - width / 2, mouseY - height / 2);
+//   translate(mouseX - width / 2, mouseY - height / 2);
   rotateX(angle * 0.2);
   rotateY(angle * 0.2);
   noStroke();
